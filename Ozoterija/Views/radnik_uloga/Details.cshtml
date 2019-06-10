@@ -1,0 +1,49 @@
+﻿@model Ozoterija.Models.radnik_uloga
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalji o ulogama radnika</h2>
+
+<div>
+    <h4>Uloga radnika</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Ime radnika
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.radnik.ime_radnika)
+        </dd>
+
+        <dt>
+            Ime uloge
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.uloga.ime_uloge)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Uredi ulogu radnika", "Edit", new { id = Model.id_radnik_uloga }, htmlAttributes: new { @class = "text-white btn btn-success" })
+
+    <span class="btn btn-danger">
+        <a class="boja" href="/radnik_uloga/">Natrag</a>
+    </span>
+</p>
+
+<style>
+    .boja {
+        color: white;
+    }
+
+        .boja:hover {
+            color: black;
+            text-decoration: none;
+        }
+</style>

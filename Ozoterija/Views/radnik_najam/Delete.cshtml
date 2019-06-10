@@ -1,0 +1,72 @@
+﻿@model Ozoterija.Models.radnik_najam
+
+@{
+    ViewBag.Title = "Izbriši najam";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Izbriši najam</h2>
+
+<h3>Jeste li sigurni da želite izbrisati najam?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Ime najma
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.najam.naziv_najma)
+        </dd>
+
+        <dt>
+            Ime radnika
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.radnik.ime_radnika)
+        </dd>
+
+        <dt>
+            Otkad
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.otkada)
+        </dd>
+
+        <dt>
+            Dokad
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dokada)
+        </dd>
+
+        <dt>
+            Plaća
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.plata)
+        </dd>
+
+        <dt>
+            Uloga
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.uloga)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+    <div class="form-actions no-color">
+        <input type="submit" value="Izbriši najam" class="btn btn-danger" /> 
+        <a class="text-white btn btn-warning" href="~/radnik_najam/Index">Natrag</a>
+    </div>
+    }
+</div>

@@ -1,0 +1,65 @@
+﻿@model Ozoterija.Models.radnik
+
+@{
+    ViewBag.Title = "Izbriši radnika";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Izbriši radnika</h2>
+
+<h3>Jeste li sigurni da želute izbrisati radnika?</h3>
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Ime grada
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.grad.ime_grada)
+        </dd>
+
+        <dt>
+            Ime radnika
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ime_radnika)
+        </dd>
+
+        <dt>
+            Prezime radnika
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.prezime_radnika)
+        </dd>
+
+        <dt>
+            Plata radnika
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.plata_radnika)
+        </dd>
+
+        <dt>
+            Certifikat radnika
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.certifikat_radnika)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Izbriši radnika" class="btn btn-danger" /> 
+            <a class="text-white btn btn-warning" href="~/radnik/Index">Natrag</a>
+        </div>
+    }
+</div>

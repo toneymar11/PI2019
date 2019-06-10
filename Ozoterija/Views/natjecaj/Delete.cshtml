@@ -1,0 +1,53 @@
+﻿@model Ozoterija.Models.natjecaj
+
+@{
+    ViewBag.Title = "Izbrisi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h3>Jeste li sigurni da želite izbrisati</h3>
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Tip Natječaja
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tip_natjecaja)
+        </dd>
+
+        <dt>
+            Ime Natječaja
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ime_natjecaja)
+        </dd>
+
+        <dt>
+            Datum Otvaranja
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.datum_otvaranja)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Izbriši Natječaj" class="btn btn-danger" />
+            <a class="text-white btn btn-warning" href="~/natjecaj/Index">Natrag</a>
+        </div>
+    }
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

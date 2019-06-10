@@ -1,0 +1,47 @@
+﻿@model Ozoterija.Models.referetni_tip
+
+@{
+    ViewBag.Title = "Detalji referentnog tipa";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalji referentnog tipa</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+          Ime referentnog tipa
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ime_referetni_tip)
+        </dd>
+
+        <dt>
+          Cijena referentnog tipa
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cijena_referetni_tip)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Uredi Referentni Tip", "Edit", new { id = Model.id_referetni_tip }, htmlAttributes: new { @class = "text-white btn btn-success" })
+
+    <span class="btn btn-danger">
+        <a class="boja" href="/referetni_tip/">Natrag</a>
+    </span>
+</p>
+<style>
+    .boja {
+        color: white;
+    }
+
+        .boja:hover {
+            color: black;
+            text-decoration: none;
+        }
+</style>

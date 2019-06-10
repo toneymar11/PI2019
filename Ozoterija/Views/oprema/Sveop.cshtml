@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Ozoterija.Models.oprema>
+
+@{
+    ViewBag.Title = "Oprema";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<table class="table">
+    <tr>
+        <th>
+            Ime referentnog tipa
+        </th>
+        <th>
+            Ime skladišta
+        </th>
+        <th>
+            Ime opreme
+        </th>
+        <th>
+            Kupovna vrijednost
+        </th>
+        <th>
+            Knjigovodstvena vrijednost
+        </th>
+        <th>
+            Trenutno stanje
+        </th>
+        
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.referetni_tip.ime_referetni_tip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.skladiste.ime_sklaldista)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ime_opreme)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.kupovna_vrijednost)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.knjigovodstvena_vrijednost)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.trenutno_stanje)
+            </td>
+         
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,46 @@
+﻿@model Ozoterija.Models.natjecaj
+
+@{
+    ViewBag.Title = "Detalji";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalji</h2>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Tip Natječaja
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tip_natjecaja)
+        </dd>
+
+        <dt>
+            Ime Natječaja
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ime_natjecaja)
+        </dd>
+
+        <dt>
+            Datum Otvaranja
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.datum_otvaranja)
+        </dd>
+
+    </dl>
+</div>
+
+<p>
+    @Html.ActionLink("Uredi Natječaj", "Edit", new { id = Model.id_natjecaj }, htmlAttributes: new { @class = "text-white btn btn-success" })
+    <div class="btn btn-danger">
+        <a class="boja" href="/ponuda/">Natrag</a>
+    </div>
+</p>

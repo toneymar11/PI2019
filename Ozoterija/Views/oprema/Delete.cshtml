@@ -1,0 +1,78 @@
+﻿@model Ozoterija.Models.oprema
+
+@{
+    ViewBag.Title = "Izbriši opremu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Izbriši opremu</h2>
+
+<h3>Jeste li sigurni da želite izbrisat opremu?</h3>
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Ime opreme
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.referetni_tip.ime_referetni_tip)
+        </dd>
+
+        <dt>
+            Ime skladišta
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.skladiste.ime_sklaldista)
+        </dd>
+
+        <dt>
+            Ime opreme
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ime_opreme)
+        </dd>
+
+        <dt>
+            Kupovna vrijednost
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kupovna_vrijednost)
+        </dd>
+
+        <dt>
+            Knjigovodstvena vrijednost
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.knjigovodstvena_vrijednost)
+        </dd>
+
+        <dt>
+            Trenutno stanje
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.trenutno_stanje)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Izbriši događaj" class="btn btn-danger" />
+            <a class="text-white btn btn-warning" href="~/oprema/Index">Natrag</a>
+        </div>
+    }
+    </div>
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+

@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Ozoterija.Models.najam>
+
+@{
+    ViewBag.Title = "Svenajam";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<table class="table">
+    <tr>
+        <th>
+            Ime najma
+        </th>
+        <th>
+            Vrsta najma
+        </th>
+        <th>
+            Cijena najma
+        </th>
+        
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.naziv_najma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tip_najma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cijena_najma)
+            </td>
+        </tr>
+    }
+
+</table>
+

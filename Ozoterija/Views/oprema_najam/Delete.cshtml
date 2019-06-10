@@ -1,0 +1,57 @@
+﻿@model Ozoterija.Models.oprema_najam
+
+@{
+    ViewBag.Title = "Izbriši oprema-najam";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Izbriši oprema-najam</h2>
+
+<h3>Jeste li sigurni da želite izbrisati oprema-najam</h3>
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+           Ime najma
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.najam.naziv_najma)
+        </dd>
+
+        <dt>
+           Ime opreme
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.oprema.ime_opreme)
+        </dd>
+
+        <dt>
+            Otkada
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.otkada)
+        </dd>
+
+        <dt>
+        Dokada
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dokada)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Izbriši oprema-najam" class="btn btn-default" /> |
+            @Html.ActionLink("Nazad", "Index")
+        </div>
+    }
+</div>

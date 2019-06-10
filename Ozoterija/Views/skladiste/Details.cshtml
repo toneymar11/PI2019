@@ -1,0 +1,38 @@
+﻿@model Ozoterija.Models.skladiste
+
+@{
+    ViewBag.Title = "Detalji skladišta";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalji skladišta</h2>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+           Ime grada
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.grad.ime_grada)
+        </dd>
+
+        <dt>
+            Ime skladišta
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ime_sklaldista)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Uredi Skladište", "Edit", new { id = Model.id_skladista }, htmlAttributes: new { @class = "text-white btn btn-success" })
+
+    <span class="btn btn-danger">
+        <a class="boja" href="/skladiste/">Natrag</a>
+    </span>
+</p>

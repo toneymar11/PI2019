@@ -1,0 +1,90 @@
+﻿@model IEnumerable<Ozoterija.Models.oprema_dogadjaj>
+
+@{
+    ViewBag.Title = "Pregled oprema-događaj";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Pregled oprema događaj</h2>
+
+<div style="float:right" class="btn btn-success">
+    <a class="boja" href="/oprema_dogadjaj/Create">Napravi događaj opremu</a>
+</div>
+<br />
+<br />
+<br />
+<table class="table table-hover bg-white" id="tablica">
+    <thead>
+        <tr>
+            <th>
+                Ime događaja
+            </th>
+            <th>
+                Ime opreme
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dogadjaj.naziv_dogadjaja)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.oprema.ime_opreme)
+                </td>
+                <td>
+                    <div class="btn btn-success">@Html.ActionLink("Uredi događaj oprema", "Edit", new { id = item.id_oprema_dogadjaj }, htmlAttributes: new { @class = "boja" })</div>
+                    <div class="btn btn-warning"> @Html.ActionLink("Detalji", "Details", new { id = item.id_oprema_dogadjaj }, htmlAttributes: new { @class = "boja" }) </div>
+                    <div class="btn btn-danger"> @Html.ActionLink("Izbriši", "Delete", new { id = item.id_oprema_dogadjaj }, htmlAttributes: new { @class = "boja" })</div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts{
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+
+
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#tablica').DataTable({
+                language: {
+                    search: "Pretraga",
+                    info: "_START_ - _END_ (ukupno _TOTAL_)",
+                    lengthMenu: "Prikaži _MENU_ zapisa",
+                    paginate: {
+                        first: "Prva",
+                        previous: "Prethodna",
+                        next: "Sljedeća",
+                        last: "Zadnja"
+                    },
+                    emptyTable: "Nema podataka za prikaz",
+                    info: "_START_ - _END_ od ukupno _TOTAL_ zapisa",
+                    infoEmpty: "Nema podataka za prikaz",
+                    infoFiltered: "(filtrirano od ukupno _MAX_ zapisa)",
+                    zeroRecords: "Ne postoje traženi podaci"
+                }
+            });
+        });
+
+
+    </script>
+}
+<style>
+    .boja {
+        color: white;
+    }
+
+        .boja:hover {
+            color: black;
+            text-decoration: none;
+        }
+</style>

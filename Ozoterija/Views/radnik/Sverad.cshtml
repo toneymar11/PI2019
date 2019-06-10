@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Ozoterija.Models.radnik>
+
+@{
+    ViewBag.Title = "Radnik";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<table class="table">
+    <tr>
+        <th>
+            Ime grada
+        </th>
+        <th>
+            Ime radnika
+        </th>
+        <th>
+            Prezime radnika
+        </th>
+        <th>
+            Plata radnika
+        </th>
+        <th>
+            Certifikat radnika
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.grad.ime_grada)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ime_radnika)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.prezime_radnika)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.plata_radnika)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.certifikat_radnika)
+            </td>
+        </tr>
+    }
+
+</table>
+

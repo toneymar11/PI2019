@@ -1,0 +1,68 @@
+﻿@model Ozoterija.Models.radnik_najam
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalji najma</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Ime najma
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.najam.naziv_najma)
+        </dd>
+
+        <dt>
+            Ime radnika
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.radnik.ime_radnika)
+        </dd>
+
+        <dt>
+            Otkad
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.otkada)
+        </dd>
+
+        <dt>
+            Dokad
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dokada)
+        </dd>
+
+        <dt>
+            Plaća
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.plata)
+        </dd>
+
+        <dt>
+            Uloga
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.uloga)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Uredi najam", "Edit", new { id = Model.id_radnik_najam }, htmlAttributes: new { @class = "text-white btn btn-success" })
+    <span class="btn btn-danger">
+        <a class="boja" href="/radnik_najam/">Natrag</a>
+    </span>
+</p>

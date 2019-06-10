@@ -1,0 +1,45 @@
+﻿@model Ozoterija.Models.najam
+
+@{
+    ViewBag.Title = "Detalji najma";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalji najma</h2>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+          Ime najma
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.naziv_najma)
+        </dd>
+
+        <dt>
+           Vrsta najma
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tip_najma)
+        </dd>
+
+        <dt>
+           Cijena najma
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cijena_najma)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Uredi najam", "Edit", new { id = Model.id_najam }, htmlAttributes: new { @class = "text-white btn btn-success" })
+    <span class="btn btn-danger">
+        <a class="boja" href="/najam/">Natrag</a>
+    </span>
+</p>

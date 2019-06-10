@@ -1,0 +1,30 @@
+﻿@model Ozoterija.Models.ponuda
+
+@{
+    ViewBag.Title = "Detalji ponude";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalji ponude</h2>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Cijena ponude
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cijena_ponude)
+        </dd>
+
+    </dl>
+</div>
+<p>
+        @Html.ActionLink("Uredi Ponudu", "Edit", new { id = Model.id_ponuda }, htmlAttributes: new { @class = "text-white btn btn-success" })
+    
+    <div class="btn btn-danger">
+        <a class="boja" href="/ponuda/">Natrag</a>
+    </div>
+</p>

@@ -1,0 +1,187 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<div id="about" class="container">
+
+    <div id="vizija" class="my-5 row d-flex flex-column">
+        <h4>VIZIJA PROJEKTA</h4>
+        <p class="my">
+            OZO je sustav za vođenje evidencije o organiziranim događajima, natječajima, opremi i radnicima.<br />
+            Aplikacija olakšava zaduživanja radnika i evidenciju usluga u vidu odranizacije raznoraznih događanja.<br />
+            Korisnici aplikacije su adminstratori u kompaniji ozo. Evidencija se sastoji od praćenja događaja na kojima <br />
+            je bio neki radnik ili neki komad opreme koji se koristio na nekom događaju te također ima evidencija<br />
+            o međunarodnim, državnim, privatnim i javnim natječajima. Korisnik može dodati nove događaje, nove radnike,<br />
+            dodjeljivati uloge radnicima, uređivati sve vrste podataka, dobivati generirane izvještaje u pdf-u, gledati<br />
+            koja roba stoji u kojem skladištu itd.<br />
+        </p>
+    </div>
+
+    <div id="Onama" class="row flex-column d-flex justify-content-end text-right">
+        <h4>O NAMA</h4>
+        <p>
+            <!--Promjenit <p>-->
+            Studenti FSRE-a u Mostaru, na smjeru računarstva. Kao zadatak iz predmeta Programsko Inžejerstvo, na šestom semestru studija (2018./'19.), napravili smo ovaj sustav (OZO),
+            za jednostavnije vođenje evidencije o organiziranim događajima, natječajima, opremi i radnicima.
+        </p>
+    </div>
+    <div id="mi" class="d-flex row my-5 justify-content-between align-items-center">
+        <div class="left col-6 row">
+            <img src="~/Slike/toni.jpeg" class="rounded-circle" alt="Toni">
+            <p>
+                <b>Toni Kopilaš</b><br />
+                Broj indexa: 1396/RR<br />
+                E-mail: toni.kopilas@student.fsr.ba
+            </p>
+        </div>
+        <div class="right col-6 row justify-content-end">
+            <p>
+                <b>Ivan Ivančić</b><br />
+                Broj indexa: 1478/RR<br />
+                E-mail: ivan.ivancic@student.fsr.ba
+            </p>
+            <img src="~/Slike/ivan.jpeg" class="rounded-circle" alt="Ivan">
+        </div>
+    </div>
+    <div id="mi" class=" d-flex row my-5 justify-content-between align-items-center">
+        <div class="left col-6 row">
+            <img src="~/Slike/bruno.jpeg" class="rounded-circle" alt="Bruno">
+            <p>
+                <b>Bruno Šušak</b><br />
+                Broj indexa: 1466/RR<br />
+                E-mail: bruno.susak@student.fsr.ba
+            </p>
+        </div>
+        <div class="right col-6 row justify-content-end">
+            <p>
+                <b>Mate Zelenika</b><br />
+                Broj indexa: 1426/RR<br />
+                E-mail: mate.zelenika@student.fsr.ba
+            </p>
+            <img src="~/Slike/mate.jpeg" class="rounded-circle" alt="Mate">
+        </div>
+    </div>
+    <div id="mi" class=" d-flex row my-5 justify-content-between align-items-center">
+        <div class="left col-6 row">
+            <img src="~/Slike/nino.jpeg" class="rounded-circle" alt="Nino">
+            <p>
+                <b>Dominik Grizelj</b><br />
+                Broj indexa: 1486/RR<br />
+                E-mail: dominik.grizelj@student.fsr.ba
+            </p>
+        </div>
+        <div class="right col-6 row justify-content-end">
+
+        </div>
+
+    </div>
+</div>
+<style>
+    .flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mi {
+        padding-left: 20 px;
+        padding-right: 20 px;
+    }
+
+    .left p {
+        padding-left: 50px;
+    }
+
+    .right p {
+        padding-right: 50px;
+    }
+
+    .left {
+        border-right: 2px solid black;
+    }
+
+    #mi img {
+        max-height: 200px;
+    }
+    /*dodano*/
+
+    .rounded-circle {
+        border-radius: 50% !important;
+    }
+
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+    .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+    .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+    .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+    .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+    .col-xl-auto {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .col-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .justify-content-end {
+        -ms-flex-pack: end !important;
+        justify-content: flex-end !important;
+    }
+
+    .d-flex {
+        display: -ms-flexbox !important;
+        display: flex !important;
+    }
+
+    .mt-5,
+    .my-5 {
+        margin-top: 3rem !important;
+    }
+
+    .mb-5,
+    .my-5 {
+        margin-bottom: 3rem !important;
+    }
+
+    .justify-content-between {
+        -ms-flex-pack: justify !important;
+        justify-content: space-between !important;
+    }
+
+    .align-items-center {
+        -ms-flex-align: center !important;
+        align-items: center !important;
+    }
+
+    .d-flex {
+        display: -ms-flexbox !important;
+        display: flex !important;
+    }
+
+    .flex-column {
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    }
+
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+</style>

@@ -1,0 +1,61 @@
+﻿@model Ozoterija.Models.dogadjaj
+
+@{
+    ViewBag.Title = "Izbriši događaj";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Izbriši događaj</h2>
+
+<h3>Jeste li sigurni da želite izbrisati događaj?</h3>
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Ime grada
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.grad.ime_grada)
+        </dd>
+
+        <dt>
+            Naziv dogadjaja
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.naziv_dogadjaja)
+        </dd>
+
+        <dt>
+            Cijena događaja
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cijena_dogadjaja)
+        </dd>
+
+        <dt>
+            Datum događaja
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.datum_dogadjaja)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Izbriši događaj" class="btn btn-danger" /> 
+           <a class="text-white btn btn-warning" href="~/dogadjaj/Index">Natrag</a>
+        </div>
+    }
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

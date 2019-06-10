@@ -1,0 +1,61 @@
+﻿@model Ozoterija.Models.servis
+
+@{
+    ViewBag.Title = "Izbriši servis";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Izbriši servis</h2>
+
+<h3>Jeste li sigurni da želite izbrisati servis?</h3>
+<div>
+
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Ime opreme
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.oprema.ime_opreme)
+        </dd>
+
+        <dt>
+            Cijena servisa
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cijena_servisa)
+        </dd>
+
+        <dt>
+            Dijelovi
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dijelovi)
+        </dd>
+
+        <dt>
+            Datum servisa
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.datum_servisa)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Izbriši Skladište" class="btn btn-danger" />
+            <a class="text-white btn btn-warning" href="~/skladiste/Index">Natrag</a>
+        </div>
+    }
+</div>

@@ -1,0 +1,66 @@
+﻿@model PagedList.IPagedList<Ozoterija.Models.dogadjaj_ponuda>
+@using PagedList.Mvc
+
+@{
+    ViewBag.Title = "Pregled događaja i ponude";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Pregled događaja i ponude</h2>
+
+<div style="float:right" class="btn btn-success">
+    <a class="boja" href="/dogadjaj_ponuda/Create">Napravi događaj ponuda</a>
+</div>
+<br />
+<br />
+<br />
+<table class="table bg-white">
+    <thead>
+        <tr>
+            <th>
+                @Html.ActionLink("Naziv događaja", "Index",
+                 new { sortOrder = "nazdog", CurrentSort = ViewBag.CurrentSort })
+            </th>
+            <th>
+                @Html.ActionLink("Cijena ponude", "Index",
+                 new { sortOrder = "cipo", CurrentSort = ViewBag.CurrentSort })
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dogadjaj.naziv_dogadjaja)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ponuda.cijena_ponude)
+                </td>
+                <td>
+                    <div class="btn btn-success">@Html.ActionLink("Uredi događaj ponuda", "Edit", new { id = item.id_dogadjaj_ponuda }, htmlAttributes: new { @class = "boja" })</div>
+                    <div class="btn btn-warning"> @Html.ActionLink("Detalji", "Details", new { id = item.id_dogadjaj_ponuda }, htmlAttributes: new { @class = "boja" }) </div>
+                    <div class="btn btn-danger"> @Html.ActionLink("Izbriši", "Delete", new { id = item.id_dogadjaj_ponuda }, htmlAttributes: new { @class = "boja" })</div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div id='Paging' style="text-align:center">
+    Stranica @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)
+    od @Model.PageCount
+
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+</div>
+<style>
+    .boja {
+        color: white;
+    }
+
+        .boja:hover {
+            color: black;
+            text-decoration: none;
+        }
+</style>
+

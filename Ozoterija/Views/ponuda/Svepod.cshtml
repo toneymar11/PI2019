@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Ozoterija.Models.ponuda>
+
+@{
+    ViewBag.Title = "PDF ponuda";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table class="table">
+    <tr>
+        <th>
+            Cijena ponude
+        </th>
+        
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.cijena_ponude)
+            </td>
+          
+        </tr>
+    }
+
+</table>

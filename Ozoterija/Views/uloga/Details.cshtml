@@ -1,0 +1,49 @@
+﻿@model Ozoterija.Models.uloga
+
+@{
+    ViewBag.Title = "Detalji";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalji Uloge</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Ime uloge
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ime_uloge)
+        </dd>
+
+        <dt>
+            Cijena Satnice
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cijena_satnice)
+        </dd>
+
+    </dl>
+</div>
+
+<p>
+    @Html.ActionLink("Uredi ulogu", "Edit", new { id = Model.id_uloge }, htmlAttributes: new { @class = "text-white btn btn-success" })
+
+    <span class="btn btn-danger">
+        <a class="boja" href="/uloga/">Natrag</a>
+    </span>
+</p>
+
+<style>
+    .boja {
+        color: white;
+    }
+
+        .boja:hover {
+            color: black;
+            text-decoration: none;
+        }
+</style>

@@ -1,0 +1,259 @@
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\Ozoterija.dll.config
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\Ozoterija.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\Ozoterija.pdb
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\csc.exe
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\csc.exe.config
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\csc.rsp
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\csi.exe
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\csi.exe.config
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\csi.rsp
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.AppContext.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Console.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.IO.Compression.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Security.Claims.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.ValueTuple.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\vbc.exe
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\vbc.exe.config
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\vbc.rsp
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\VBCSCompiler.exe
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\Antlr3.Runtime.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\EntityFramework.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\EntityFramework.SqlServer.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\Newtonsoft.Json.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.Helpers.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.Mvc.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.Optimization.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.Razor.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.WebPages.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\WebGrease.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\EntityFramework.xml
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\EntityFramework.SqlServer.xml
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.Helpers.xml
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.Mvc.xml
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.Optimization.xml
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.Razor.xml
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.WebPages.xml
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.WebPages.Razor.xml
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\Newtonsoft.Json.xml
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\Antlr3.Runtime.pdb
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\obj\Debug\Ozoterija.csproj.CoreCompileInputs.cache
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\obj\Debug\Ozoterija.csproj.CopyComplete
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\obj\Debug\Ozoterija.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\obj\Debug\Ozoterija.pdb
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\PagedList.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\PagedList.Mvc.dll
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\PagedList.xml
+C:\Users\Tony\Desktop\Programsko\Ozoterija\Ozoterija\bin\PagedList.Mvc.xml
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\Ozoterija.dll.config
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\Ozoterija.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\Ozoterija.pdb
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\csc.exe
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\csc.exe.config
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\csc.rsp
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\csi.exe
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\csi.exe.config
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\csi.rsp
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.AppContext.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Console.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.IO.Compression.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Security.Claims.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.ValueTuple.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\vbc.exe
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\vbc.exe.config
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\vbc.rsp
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\VBCSCompiler.exe
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\Antlr3.Runtime.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\EntityFramework.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\EntityFramework.SqlServer.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\Newtonsoft.Json.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\PagedList.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\PagedList.Mvc.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.Helpers.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.Mvc.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.Optimization.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.Razor.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.WebPages.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.WebPages.Razor.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\WebGrease.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\EntityFramework.xml
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\EntityFramework.SqlServer.xml
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\PagedList.xml
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\PagedList.Mvc.xml
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.Helpers.xml
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.Mvc.xml
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.Optimization.xml
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.Razor.xml
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.WebPages.xml
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\System.Web.WebPages.Razor.xml
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\Newtonsoft.Json.xml
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\Antlr3.Runtime.pdb
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\obj\Debug\Ozoterija.csproj.CoreCompileInputs.cache
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\obj\Debug\Ozoterija.csproj.CopyComplete
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\obj\Debug\Ozoterija.dll
+C:\Users\Hp\Desktop\Programsko\Ozoterija\Ozoterija\obj\Debug\Ozoterija.pdb
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\Ozoterija.dll.config
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\Ozoterija.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\Ozoterija.pdb
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\csc.exe
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\csc.exe.config
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\csc.rsp
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\csi.exe
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\csi.exe.config
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\csi.rsp
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.AppContext.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Console.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.IO.Compression.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Security.Claims.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.ValueTuple.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\vbc.exe
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\vbc.exe.config
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\vbc.rsp
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\VBCSCompiler.exe
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\Antlr3.Runtime.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\EntityFramework.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\EntityFramework.SqlServer.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\Newtonsoft.Json.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\PagedList.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\PagedList.Mvc.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\System.Web.Helpers.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\System.Web.Mvc.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\System.Web.Optimization.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\System.Web.Razor.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\System.Web.WebPages.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\WebGrease.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\EntityFramework.xml
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\EntityFramework.SqlServer.xml
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\PagedList.xml
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\PagedList.Mvc.xml
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\System.Web.Helpers.xml
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\System.Web.Mvc.xml
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\System.Web.Optimization.xml
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\System.Web.Razor.xml
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\System.Web.WebPages.xml
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\System.Web.WebPages.Razor.xml
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\Newtonsoft.Json.xml
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\Antlr3.Runtime.pdb
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\obj\Debug\Ozoterija.csproj.CoreCompileInputs.cache
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\obj\Debug\Ozoterija.csproj.CopyComplete
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\obj\Debug\Ozoterija.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\obj\Debug\Ozoterija.pdb
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\BouncyCastle.Crypto.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\Common.Logging.Core.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\Common.Logging.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\BouncyCastle.Crypto.xml
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\Common.Logging.pdb
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\Common.Logging.xml
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\Common.Logging.Core.pdb
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\Common.Logging.Core.xml
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\bin\Rotativa.dll
+C:\Users\Tony\Desktop\Programsko (1)\Programsko\Ozoterija\Ozoterija\obj\Debug\Ozoterija.csprojAssemblyReference.cache

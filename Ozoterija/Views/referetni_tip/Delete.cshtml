@@ -1,0 +1,40 @@
+﻿@model Ozoterija.Models.referetni_tip
+
+@{
+    ViewBag.Title = "Izbriši referentni tip";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Izbriši referentni tip</h2>
+
+<h3>Jeste li sigurni da želite izbrisati ovaj referentni tip</h3>
+<div>
+       <hr />
+    <dl class="dl-horizontal">
+        <dt>
+           Ime referentnog tipa
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ime_referetni_tip)
+        </dd>
+
+        <dt>
+           Cijena referentnog tipa
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cijena_referetni_tip)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+    <div class="form-actions no-color">
+        <input type="submit" value="Izbriši Referentni Tip" class="btn btn-danger" />
+        <a class="text-white btn btn-warning" href="~/referetni_tip/Index">Natrag</a>
+    </div>
+    }
+</div>

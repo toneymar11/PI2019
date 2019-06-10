@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <style>
+        .dropbtn {
+            background-color: #222;
+            color: #9d9d9d;
+            padding: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+            .dropbtn:hover {
+                color: aliceblue;
+            }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+        .pozadina {
+            background-color: turquoise;
+        }
+    </style>
+</head>
+<body class="pozadina">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+               
+                <button type="button" class="navbar-toggle btn btn-danger" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar">Ozoterija</span>
+                   
+                </button>
+                <button type="button" class="btn btn-light"><a href="~/Home/About">O projektu</a></button>
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                   
+
+                   
+                    <li>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Toni Kopilaš</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                @Html.ActionLink("Događaj", "Index", "dogadjaj")
+                                @Html.ActionLink("Događaj ponuda", "Index", "dogadjaj_ponuda")
+                                @Html.ActionLink("Dogadjaj oprema", "Index", "oprema_dogadjaj")
+                                @Html.ActionLink("Grad", "Index", "grad")
+                                
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <div class="dropdown">
+                            <button onclick="myFunction1()" class="dropbtn">Ivan Ivančić</button>
+                            <div id="myDropdown1" class="dropdown-content">
+
+                                @Html.ActionLink("Ponuda", "Index", "ponuda")
+                                @Html.ActionLink("Ponuda Uloga", "Index", "ponuda_uloga")
+                                @Html.ActionLink("Natjecaj", "Index", "natjecaj")
+                                @Html.ActionLink("Natjecaj Ponuda", "Index", "natjecaj_ponuda")
+                                @Html.ActionLink("Ponuda Referenti-Tip", "Index", "ponuda_referentni_tip")
+                            
+
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button onclick="myFunction2()" class="dropbtn">Bruno Šušak</button>
+                            <div id="myDropdown2" class="dropdown-content">
+                                @Html.ActionLink("Radnik", "Index", "radnik")
+                                @Html.ActionLink("Uloga", "Index", "uloga")
+                                @Html.ActionLink("Radnik uloga", "Index", "radnik_uloga")
+                                @Html.ActionLink("Događaj radnik", "Index", "radnik_dogadjaj")
+
+
+
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button onclick="myFunction3()" class="dropbtn">Mate Zelenika</button>
+                            <div id="myDropdown3" class="dropdown-content">
+                                @Html.ActionLink("Najam", "Index", "najam")
+                                @Html.ActionLink("Radnik najam", "Index", "radnik_najam")
+                                @Html.ActionLink("Oprema najam", "Index", "oprema_najam")
+
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button onclick="myFunction4()" class="dropbtn">Dominik Grizelj</button>
+                            <div id="myDropdown4" class="dropdown-content">
+
+                                @Html.ActionLink("Oprema", "Index", "oprema")
+                                @Html.ActionLink("Skladište", "Index", "skladiste")
+                                @Html.ActionLink("Servis", "Index", "servis")
+                                @Html.ActionLink("Referentni Tip", "Index", "referetni_tip")
+
+                            </div>
+                        </div>
+
+                    </li>
+
+
+                    <!-- <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <br /><br />
+        @if (TempData["error"] != null)
+        {
+            if ((bool)TempData["error"] == true)
+            {
+                <div class="alert-danger">@TempData["message"]</div>
+            }
+            else if ((bool)TempData["error"] == false)
+            {
+                <div class="alert-success">@TempData["message"]</div>
+            }
+        }
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - FSRE studenti računarstva</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <script>
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script><!--Toni-->
+    <script>
+
+        function myFunction1() {
+            document.getElementById("myDropdown1").classList.toggle("show");
+        }
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script><!--Ivan-->
+    <script>
+
+        function myFunction2() {
+            document.getElementById("myDropdown2").classList.toggle("show");
+        }
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script><!--Bruno-->
+    <script>
+
+        function myFunction3() {
+            document.getElementById("myDropdown3").classList.toggle("show");
+        }
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script><!--Mate-->
+    <script>
+
+        function myFunction4() {
+            document.getElementById("myDropdown4").classList.toggle("show");
+        }
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script><!--Nino-->
+</body>
+</html>

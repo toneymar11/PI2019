@@ -1,0 +1,64 @@
+﻿@model Ozoterija.Models.servis
+
+@{
+    ViewBag.Title = "Detalji servisa";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalji servisa</h2>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+           Ime opreme
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.oprema.ime_opreme)
+        </dd>
+
+        <dt>
+           Cijena servisa
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cijena_servisa)
+        </dd>
+
+        <dt>
+           Dijelovi
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dijelovi)
+        </dd>
+
+        <dt>
+           Datum servisa
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.datum_servisa)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Uredi Servis", "Edit", new { id = Model.id_servisa }, htmlAttributes: new { @class = "text-white btn btn-success" })
+
+    <span class="btn btn-danger">
+        <a class="boja" href="/servis/">Natrag</a>
+    </span>
+</p>
+<style>
+    .boja {
+        color: white;
+    }
+
+        .boja:hover {
+            color: black;
+            text-decoration: none;
+        }
+</style>

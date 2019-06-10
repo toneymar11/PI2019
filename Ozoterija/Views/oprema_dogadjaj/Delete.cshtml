@@ -1,0 +1,41 @@
+﻿@model Ozoterija.Models.oprema_dogadjaj
+
+@{
+    ViewBag.Title = "Izbriši oprema-događaj";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Izbriši oprema-događaj</h2>
+
+<h3>Jeste li sigurni da zelite izbrisati oprema-događaj?</h3>
+<div>
+   
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+           Ime događaja
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dogadjaj.naziv_dogadjaja)
+        </dd>
+
+        <dt>
+           Ime opreme
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.oprema.ime_opreme)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Izbriši oprema-događaj" class="btn btn-danger" /> 
+            <a class="text-white btn btn-warning" href="~/oprema_dogadjaj/Index">Natrag</a>
+        </div>
+    }
+</div>

@@ -1,0 +1,27 @@
+﻿@model Ozoterija.Models.grad
+
+@{
+    ViewBag.Title = "Detalji grada";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalji grada</h2>
+
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Ime grada
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ime_grada)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Uredi grad", "Edit", new { id = Model.id_grad }, htmlAttributes: new { @class = "text-white btn btn-success" }) 
+    <a class="text-white btn btn-danger" href="~/grad/Index">Natrag</a>
+</p>

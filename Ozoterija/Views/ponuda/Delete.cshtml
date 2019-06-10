@@ -1,0 +1,36 @@
+﻿@model Ozoterija.Models.ponuda
+
+@{
+    ViewBag.Title = "Izbriši ponudu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Izbriši ponudu</h2>
+
+<h3>Jeste li sigurni da želite izbrisati ponudu?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Cijena ponude
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cijena_ponude)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Izbriši Ponudu" class="btn btn-danger" />
+            <a class="text-white btn btn-warning" href="~/ponuda/Index">Natrag</a>
+        </div>
+    }
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

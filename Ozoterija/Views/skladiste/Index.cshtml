@@ -1,0 +1,63 @@
+﻿@model PagedList.IPagedList<Ozoterija.Models.skladiste>
+@using PagedList.Mvc
+
+@{
+    ViewBag.Title = "Pregled skladišta";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Pregled skladišta</h2>
+<div style="float:right" class="btn btn-success">
+    <a class="boja" href="/skladiste/Create">Napravi Skladište</a>
+</div>
+<br />
+<br />
+<br />
+
+<table class="table table-hover" id="tablica">
+    <tr>
+        <th>
+            @Html.ActionLink("Ime grada", "Index",
+             new { sortOrder = "imegrada", CurrentSort = ViewBag.CurrentSort })
+        </th>
+        <th>
+            @Html.ActionLink("Ime skladišta", "Index",
+             new { sortOrder = "imeskl", CurrentSort = ViewBag.CurrentSort })
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.grad.ime_grada)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ime_sklaldista)
+            </td>
+            <td>
+                <div class="btn btn-success">@Html.ActionLink("Uredi Skladište", "Edit", new { id = item.id_skladista }, htmlAttributes: new { @class = "boja" })</div>
+                <div class="btn btn-warning"> @Html.ActionLink("Detalji Skladišta", "Details", new { id = item.id_skladista }, htmlAttributes: new { @class = "boja" }) </div>
+                <div class="btn btn-danger"> @Html.ActionLink("Izbriši Skladište", "Delete", new { id = item.id_skladista }, htmlAttributes: new { @class = "boja" })</div>
+            </td>
+        </tr>
+    }
+
+</table>
+<div id='Paging' style="text-align:center">
+    Stranica @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)
+    od @Model.PageCount
+
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+</div>
+<style>
+    .boja {
+        color: white;
+    }
+
+        .boja:hover {
+            color: black;
+            text-decoration: none;
+        }
+</style>

@@ -1,0 +1,41 @@
+﻿@model Ozoterija.Models.radnik_uloga
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Izbrisati radnik uloga</h2>
+
+<h3>Jeste sigurni da želite ovo izbrisati?</h3>
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Ime radnika
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.radnik.ime_radnika)
+        </dd>
+
+        <dt>
+            Ime uloge
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.uloga.ime_uloge)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+    <div class="form-actions no-color">
+        <input type="submit" value="Delete" class="btn btn-danger" /> 
+        <a class="text-white btn btn-warning" href="~/radnik_uloga/Index">Natrag</a>
+    </div>
+    }
+</div>

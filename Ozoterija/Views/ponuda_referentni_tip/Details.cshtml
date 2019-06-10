@@ -1,0 +1,40 @@
+﻿@model Ozoterija.Models.ponuda_referentni_tip
+
+@{
+    ViewBag.Title = "Detalji";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalji</h2>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Cijena Ponude
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ponuda.cijena_ponude)
+        </dd>
+
+        <dt>
+            Referenti Tip
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.referetni_tip.ime_referetni_tip)
+        </dd>
+
+    </dl>
+</div>
+<p>
+
+    @Html.ActionLink("Uredi Ponuda-Referenti-Tip", "Edit", new { id = Model.id_ponuda_referetni_tip }, htmlAttributes: new { @class = "text-white btn btn-success" })
+
+    <div class="btn btn-danger">
+        <a class="boja" href="/ponuda_referentni_tip/">Natrag</a>
+    </div>
+</p>
+

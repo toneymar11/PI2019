@@ -1,0 +1,47 @@
+﻿@model Ozoterija.Models.oprema_dogadjaj
+
+@{
+    ViewBag.Title = "Detalji oprema-događaj";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalji oprema-događaj</h2>
+
+<div>
+    <h4>oprema_dogadjaj</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+         Ime događaj
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dogadjaj.naziv_dogadjaja)
+        </dd>
+
+        <dt>
+           Ime oprema
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.oprema.ime_opreme)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Uredi oprema-događaj", "Edit", new { id = Model.id_oprema_dogadjaj }, htmlAttributes: new { @class = "text-white btn btn-success" }) 
+    <div class="btn btn-danger">
+        <a class="boja" href="/oprema_dogadjaj/">Natrag</a>
+    </div>
+    <style>
+        .boja {
+            color: white;
+        }
+
+            .boja:hover {
+                color: black;
+                text-decoration: none;
+            }
+    </style>
+</p>

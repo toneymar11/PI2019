@@ -1,0 +1,42 @@
+﻿@model Ozoterija.Models.skladiste
+
+@{
+    ViewBag.Title = "Izbriši skladište";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Izbriši skladište</h2>
+
+<h3>Jeste li sigurni da želite izbrisati skladište?</h3>
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Ime grada
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.grad.ime_grada)
+        </dd>
+
+        <dt>
+            Ime skladišta
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ime_sklaldista)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Izbriši Skladište" class="btn btn-danger" />
+            <a class="text-white btn btn-warning" href="~/skladiste/Index">Natrag</a>
+        </div>
+    }
+</div>

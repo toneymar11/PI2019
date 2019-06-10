@@ -1,0 +1,97 @@
+﻿@model PagedList.IPagedList<Ozoterija.Models.natjecaj>
+@using PagedList.Mvc
+@{
+    ViewBag.Title = "Kreiraj";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Natječaj</h2>
+<div style="float:right" class="btn btn-success">
+    <a class="boja" href="/natjecaj/Create">Napravi Natječaj</a>
+</div>
+<br />
+<br />
+<br />
+
+
+<table class="table-hover table table-striped bg-white" id="tablica">
+    <thead>
+
+        <tr>
+            <th>
+                @Html.ActionLink("Tip Natječaja", "Index",
+                  new { sortOrder = "tip_nat", CurrentSort = ViewBag.CurrentSort })
+            </th>
+            <th>
+                @Html.ActionLink("Ime Natječaja", "Index",
+                 new { sortOrder = "ime_nat", CurrentSort = ViewBag.CurrentSort })
+            </th>
+            <th>
+                Datum Otvaranja
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tip_natjecaja)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ime_natjecaja)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.datum_otvaranja)
+                </td>
+                <td>
+                    <div class="btn btn-success">@Html.ActionLink("Uredi Natječaj", "Edit", new { id = item.id_natjecaj }, htmlAttributes: new { @class = "boja" })</div>
+                    <div class="btn btn-warning"> @Html.ActionLink("Detalji Natječaj", "Details", new { id = item.id_natjecaj }, htmlAttributes: new { @class = "boja" }) </div>
+                    <div class="btn btn-danger"> @Html.ActionLink("Izbriši Natječaj", "Delete", new { id = item.id_natjecaj }, htmlAttributes: new { @class = "boja" })</div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@section scripts{
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+
+
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#tablica').DataTable({
+                language: {
+                    search: "Pretraga",
+                    info: "_START_ - _END_ (ukupno _TOTAL_)",
+                    lengthMenu: "Prikaži _MENU_ zapisa",
+                    paginate: {
+                        first: "Prva",
+                        previous: "Prethodna",
+                        next: "Sljedeća",
+                        last: "Zadnja"
+                    },
+                    emptyTable: "Nema podataka za prikaz",
+                    info: "_START_ - _END_ od ukupno _TOTAL_ zapisa",
+                    infoEmpty: "Nema podataka za prikaz",
+                    infoFiltered: "(filtrirano od ukupno _MAX_ zapisa)",
+                    zeroRecords: "Ne postoje traženi podaci"
+                }
+            });
+        });
+
+
+    </script>
+}
+
+<div id='Paging' style="text-align:center">
+    Stranica @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)
+    od @Model.PageCount
+
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+</div>

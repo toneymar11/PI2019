@@ -1,0 +1,120 @@
+﻿@model IEnumerable<Ozoterija.Models.oprema>
+
+@{
+    ViewBag.Title = "Oprema";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Pregled opreme</h2>
+
+
+<div style="float:right" class="btn btn-success">
+    <a class="boja" href="/oprema/Create">Napravi Opremu</a>
+</div>
+<br />
+<br />
+<br />
+
+<table class="table table-striped" id="tablica">
+    <thead>
+        <tr>
+            <th>
+                Ime referentnog tipa
+            </th>
+            <th>
+                Ime skladišta
+            </th>
+            <th>
+                Ime opreme
+            </th>
+            <th>
+                Kupovna vrijednost
+            </th>
+            <th>
+                Knjigovodstvena vrijednost
+            </th>
+            <th>
+                Trenutno stanje
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.referetni_tip.ime_referetni_tip)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.skladiste.ime_sklaldista)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ime_opreme)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.kupovna_vrijednost)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.knjigovodstvena_vrijednost)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.trenutno_stanje)
+                </td>
+                <td class="d-flex">
+                    <div class="btn btn-success">@Html.ActionLink("Uredi", "Edit", new { id = item.id_opreme }, htmlAttributes: new { @class = "boja" })</div>
+                    &nbsp<div class="btn btn-warning"> @Html.ActionLink("Detalji", "Details", new { id = item.id_opreme }, htmlAttributes: new { @class = "boja" }) </div>
+                    &nbsp <div class="btn btn-danger"> @Html.ActionLink("Izbriši", "Delete", new { id = item.id_opreme }, htmlAttributes: new { @class = "boja" })</div>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+<a class="btn btn-primary boja" href="~/oprema/GeneratePDF" target="_blank">Generiraj PDF </a>
+
+
+@section scripts{
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#tablica').DataTable({
+                language: {
+                    search: "Pretraga",
+                    info: "_START_ - _END_ (ukupno _TOTAL_)",
+                    lengthMenu: "Prikaži _MENU_ zapisa",
+                    paginate: {
+                        first: "Prva",
+                        previous: "Prethodna",
+                        next: "Sljedeća",
+                        last: "Zadnja"
+                    },
+                    emptyTable: "Nema podataka za prikaz",
+                    info: "_START_ - _END_ od ukupno _TOTAL_ zapisa",
+                    infoEmpty: "Nema podataka za prikaz",
+                    infoFiltered: "(filtrirano od ukupno _MAX_ zapisa)",
+                    zeroRecords: "Ne postoje traženi podaci"
+                }
+            });
+        });
+
+
+    </script>
+}
+<style>
+    .boja {
+        color: white;
+    }
+
+        .boja:hover {
+            color: black;
+            text-decoration: none;
+        }
+</style>
+

@@ -1,0 +1,44 @@
+﻿@model Ozoterija.Models.ponuda_referentni_tip
+
+@{
+    ViewBag.Title = "Izbrisi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h3>Jeste li sigurni da želite izbrisati</h3>
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Cijena Ponude
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ponuda.cijena_ponude)
+        </dd>
+
+        <dt>
+            Ime Referenti Tipa
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.referetni_tip.ime_referetni_tip)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Izbriši Ponudua-Referenti-Tip" class="btn btn-danger" />
+            <a class="text-white btn btn-warning" href="~/ponuda_referentni_tip/Index">Natrag</a>
+        </div>
+    }
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

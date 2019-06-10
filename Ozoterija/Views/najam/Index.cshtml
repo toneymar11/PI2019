@@ -1,0 +1,76 @@
+﻿@model PagedList.IPagedList<Ozoterija.Models.najam>
+@using PagedList.Mvc
+
+@{
+    ViewBag.Title = "Pregled najam";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Pregled  najam</h2>
+
+<div style="float:right" class="btn btn-success">
+    <a class="boja" href="/najam/Create">Napravi najam</a>
+</div>
+<br />
+<br />
+<br />
+
+<table class="table table-hover table-striped bg-light">
+    <tr>
+        <th>
+            @Html.ActionLink("Ime Najma", "Index",
+              new { sortOrder = "ime_naj", CurrentSort = ViewBag.CurrentSort })
+        </th>
+        <th>
+            @Html.ActionLink("Vrsta Najma", "Index",
+               new { sortOrder = "vrsta_najma", CurrentSort = ViewBag.CurrentSort })
+        </th>
+        <th>
+            @Html.ActionLink("Cijena Najma", "Index",
+              new { sortOrder = "cijena_najma", CurrentSort = ViewBag.CurrentSort })
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.naziv_najma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tip_najma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cijena_najma)
+            </td>
+            <td>
+                <div class="btn btn-success">@Html.ActionLink("Uredi najam", "Edit", new { id = item.id_najam }, htmlAttributes: new { @class = "boja" })</div>
+                <div class="btn btn-warning"> @Html.ActionLink("Detalji najma", "Details", new { id = item.id_najam }, htmlAttributes: new { @class = "boja" }) </div>
+                <div class="btn btn-danger"> @Html.ActionLink("Izbriši najam", "Delete", new { id = item.id_najam }, htmlAttributes: new { @class = "boja" })</div>
+
+            </td>
+        </tr>
+    }
+
+</table>
+<div id="Paging" class="text-center" >
+    Stranica @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)
+    od @Model.PageCount
+
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+</div>
+
+<a class="btn btn-primary boja" href="~/najam/GeneratePDF" target="_blank">Generiraj PDF </a>
+
+<style>
+    .boja {
+        color: white;
+    }
+
+        .boja:hover {
+            color: black;
+            text-decoration: none;
+        }
+</style>
+
